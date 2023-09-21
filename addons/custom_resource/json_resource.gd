@@ -58,11 +58,8 @@ func _set(property, value) -> bool:
 	for entry in cpl:
 		if entry.name == property:
 			return false
-#	if not (property in ClassDB.class_get_property_list("Resource")):
 	_set_recursive(property, value, _data)
 	return true
-
-#	return false
 
 
 func get_data() -> Dictionary:
@@ -79,11 +76,7 @@ func _get_property_list() -> Array:
 	var p := []
 	p.append({"name":"_data", "type":TYPE_DICTIONARY, "usage":PROPERTY_USAGE_NO_EDITOR})
 
-	print("---")
-	print(_data)
-	print("---")
 	p = _create_property_list(_data, p)
-	print(p)
 	return p
 
 
