@@ -1,3 +1,11 @@
+# About this fork
+
+* Ported to Godot 4.1
+* Only the json ressource is ported, the text ressource and example are untouched
+* Added a "jdat" extension as normal jsons are now handled by the editor and I didn't want to mess with that
+
+Original readme:
+
 # Godot CustomResource 🤖
 An useful collection of custom resources that supports custom formats. Just download it and save it in your project, let the editor do the rest.
 
